@@ -36,6 +36,7 @@ crash*. It doesn't necessarily mean it will run well on your system ;) It featur
 - [Overseerr](https://overseerr.dev/) is a show and movie request management and media discovery
    tool.
 - [Jellyseerr](https://github.com/Fallenbagel/jellyseerr) is like Overseerr, but for Jellyfin.
+- [Komga](https://komga.org/) is a media server for your comics, mangas, BDs, magazines and eBooks.
 
 ## Using
 ### Using the CLI

@@ -64,6 +64,8 @@ if len(services_classed['indexer']) == 0:
 
 print('\n===MEDIA SERVERS===')
 services_classed['ms'] = []
+print('Use Komga? [Y/n]', end=" ")
+take_input('komga', 'ms')
 print('Use PleX? [Y/n]', end=" ")
 take_input('plex', 'ms')
 if services_classed['ms'].__contains__('plex'):

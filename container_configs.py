@@ -265,3 +265,21 @@ class ContainerConfig:
             '      - "8081:8080"\n'
             '    restart: unless-stopped\n\n'
         )
+    
+    def komga(self):
+        return (
+            '  komga:\n'
+            '    image: gotson/komga\n'
+            '    container_name: komga\n'
+            '    environment:\n'
+            '      - PUID=13013\n'
+            '      - PGID=13000\n'
+            '      - UMASK=002\n'
+            '      - TZ=' + self.timezone + '\n'
+            '    volumes:\n'
+            '      - ' + self.config_dir + '/komga-config:/config\n'
+            '      - ' + self.comic_dir + ':/data\n'
+            '    ports:\n'
+            '      - "25600:25600"\n'
+            '    restart: unless-stopped\n\n'
+        )

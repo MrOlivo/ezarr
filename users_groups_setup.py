@@ -107,3 +107,8 @@ class UserGroupSetup:
         os.system('sudo useradd jellyseerr -u 13012')
         self.create_config_dir('jellyseerr')
         os.system('sudo usermod -a -G mediacenter jellyseerr')
+    
+    def komga(self):
+        os.system('sudo useradd komga -u 13013')
+        self.create_config_dir('komga')
+        os.system('sudo usermod -a -G mediacenter komga')
