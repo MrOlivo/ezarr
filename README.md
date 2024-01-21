@@ -1,5 +1,5 @@
 # EZARR
-[![Check running](https://github.com/Luctia/ezarr/actions/workflows/check_running.yml/badge.svg)](https://github.com/Luctia/ezarr/actions/workflows/check_running.yml)
+[![Check running](https://img.shields.io/github/actions/workflow/status/MrOlivo/ezarr/heck_running.yml?style=for-the-badge&labelColor=363a4f&color=b7bdf8)](https://github.com/MrOlivo/ezarr/actions/workflows/check_running.yml)
 
 Ezarr is a project built to make it EZ to deploy a Servarr mediacenter on an Ubuntu server. The
 badge above means that the shell script and docker-compose file in this repository at least *don't
