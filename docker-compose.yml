@@ -104,6 +104,21 @@ services:
       - "9696:9696"
     restart: unless-stopped
 
+  komga:
+    image: gotson/komga
+    container_name: komga
+    environment:
+      - PUID=13013
+      - PGID=13000
+      - UMASK=002
+      - TZ=Europe/Amsterdam
+    volumes:
+      - /home/user/ezarr/config/komga-config:/config
+      - /home/user/ezarr/media/comics:/data
+    ports:
+      - "25600:25600"
+    restart: unless-stopped
+
   plex:
     image: lscr.io/linuxserver/plex:latest
     container_name: plex
@@ -176,7 +191,8 @@ services:
       - TZ=Europe/Amsterdam
     volumes:
       - /home/user/ezarr/config/sabnzbd-config:/config
-      - /home/user/ezarr/data/usenet:/data/usenet
+      - /home/user/ezarr/data/usenet:/downloads
     ports:
       - "8081:8080"
     restart: unless-stopped
+
