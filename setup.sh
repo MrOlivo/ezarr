@@ -14,7 +14,7 @@ sudo useradd plex -u 13010
 sudo useradd sabnzbd -u 13011
 sudo useradd jellyseerr -u 13012
 sudo useradd bazarr -u 13013
-sudo useradd komga -u 13013
+sudo useradd komga -u 13014
 sudo groupadd mediacenter -g 13000
 sudo usermod -a -G mediacenter sonarr
 sudo usermod -a -G mediacenter radarr

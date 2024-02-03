@@ -289,7 +289,7 @@ class ContainerConfig:
             '    image: gotson/komga\n'
             '    container_name: komga\n'
             '    environment:\n'
-            '      - PUID=13013\n'
+            '      - PUID=13014\n'
             '      - PGID=13000\n'
             '      - UMASK=002\n'
             '      - TZ=' + self.timezone + '\n'
