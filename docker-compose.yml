@@ -104,6 +104,34 @@ services:
       - "6767:6767"
     restart: unless-stopped
 
+  overseerr:
+    image: sctx/overseerr:latest
+    container_name: overseerr
+    environment:
+      - PUID=13009
+      - PGID=13000
+      - UMASK=002
+      - TZ=Europe/Amsterdam
+    volumes:
+      - /home/user/ezarr/config/overseerr-config:/app/config
+    ports:
+      - "5055:5055"
+    restart: unless-stopped
+
+  jellyseerr:
+    image: fallenbagel/jellyseerr:latest
+    container_name: jellyseerr
+    environment:
+      - PUID=13012
+      - PGID=13000
+      - UMASK=002
+      - TZ=Europe/Amsterdam
+    volumes:
+      - /home/user/ezarr/config/jellyseerr-config:/app/config
+    ports:
+      - "5056:5055"
+    restart: unless-stopped
+
   prowlarr:
     image: lscr.io/linuxserver/prowlarr:develop
     container_name: prowlarr
